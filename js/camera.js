@@ -14,7 +14,7 @@ if (navigator.getUserMedia) {
       // Constraints
       {
         video: true
-      },
+      },.
   
       // Success Callback
       function(localMediaStream) {

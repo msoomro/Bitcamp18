@@ -35,15 +35,18 @@ $("#startbtn").click(function (event)
        else if(timeleft == 1)
        {
         $("#countdowntimer").hide();
+        $("#cat").show();
         //window.location.replace("webcam.html");
-              (function() {
+
+          // cp-ed from testing123.html
+          /*(function() {
           'use strict';
           var video = document.querySelector('video')
             , canvas;
-          /**
-           *  generates a still frame image from the stream in the <video>
-           *  appends the image to the <body>
-           */
+          
+          //  generates a still frame image from the stream in the <video>
+          //  appends the image to the <body>
+           
           function takeSnapshot() {
             var img = document.querySelector('img') || document.createElement('img');
             var context;
@@ -72,7 +75,7 @@ $("#startbtn").click(function (event)
                 document.body.textContent = 'Could not access the camera. Error: ' + error.name;
               });
           }
-        })();
+        })();*/
        }
       },1000);
     }
@@ -106,7 +109,7 @@ var randomsub = randomNumber()
 var soundFile = sound[randomsub]
 document.write ('<EMBED src= "' + soundFile + '" hidden=true autostart=true loop=true>');
 
-// JS for webcam access
+// JS for webcam display
 var video = document.querySelector("#videoElement");
  
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
@@ -122,3 +125,4 @@ function handleVideo(stream) {
 function videoError(e) {
     // ah an error, do something
 }
+

@@ -50,21 +50,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -121,8 +106,14 @@ h6 {
 }
 
 .gif {
-  background: url("gif/mrblink.gif");
   padding: 0;
+}
+
+#cat {
+  align-self: top;
+  padding: 0;  
+  width: 50%;
+  height: auto;
 }
 
 .service-icon {
@@ -229,14 +220,18 @@ border-radius:5px;
 }
 
 #container {
-  margin: 0px auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /*
   width: 500px;
   height: 375px;
-  border: 10px #333 solid;
+  border: 5px #333 solid;
+  */
 }
 #videoElement {
-  width: 500px;
-  height: 375px;
+  width: 250px;
+  height: 187.5px;
   background-color: #666;
 }
 
